@@ -7,4 +7,6 @@ RUN mkdir -p /var/run/sshd
 ADD init.sh /init.sh
 RUN chmod u+x /init.sh
 
+EXPOSE 22
+
 CMD /init.sh
